@@ -12,8 +12,9 @@
   <arg name="min_range" default="0.4" />
   <arg name="pcap" default="" />
   <arg name="port" default="2368" />
-  <arg name="read_fast" default="false" />
-  <arg name="read_once" default="false" />
+  <arg name="read_fast" default="true" />
+  <arg name="read_hz" default="150"/>
+  <arg name="read_once" default="true" />
   <arg name="repeat_delay" default="0.0" />
   <arg name="rpm" default="600.0" />
   <arg name="gps_time" default="false" />
@@ -31,6 +32,7 @@
     <arg name="port" value="$(arg port)"/>
     <arg name="read_fast" value="$(arg read_fast)"/>
     <arg name="read_once" value="$(arg read_once)"/>
+    <arg name="read_hz" value="$(arg read_hz)"/>
     <arg name="repeat_delay" value="$(arg repeat_delay)"/>
     <arg name="rpm" value="$(arg rpm)"/>
     <arg name="gps_time" value="$(arg gps_time)"/>

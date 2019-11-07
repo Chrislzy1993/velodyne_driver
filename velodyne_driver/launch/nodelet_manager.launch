@@ -11,6 +11,7 @@
   <arg name="port" default="2368" />
   <arg name="read_fast" default="false" />
   <arg name="read_once" default="false" />
+  <arg name="read_hz" default="10"/>
   <arg name="repeat_delay" default="0.0" />
   <arg name="rpm" default="600.0" />
   <arg name="gps_time" default="false" />
@@ -29,6 +30,7 @@
     <param name="port" value="$(arg port)" />
     <param name="read_fast" value="$(arg read_fast)"/>
     <param name="read_once" value="$(arg read_once)"/>
+    <param name="read_hz" value="$(arg read_hz)"/>
     <param name="repeat_delay" value="$(arg repeat_delay)"/>
     <param name="rpm" value="$(arg rpm)"/>
     <param name="gps_time" value="$(arg gps_time)"/>

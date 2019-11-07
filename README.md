@@ -20,3 +20,19 @@ testing has not been completed in those environments.
 - <sup>1</sup>Velodyne: http://www.ros.org/wiki/velodyne
 - <sup>2</sup>ROS: http://www.ros.org
 - <sup>3</sup>`Velodyne high definition 3D LIDARs`: http://www.velodynelidar.com/lidar/lidar.aspx
+
+
+
+
+
+# 注意
+
+重新编译安装yaml-cpp后, 解决velodyne驱动问题
+
+````
+cd [build path of yaml-cpp]
+cmake -DBUILD_SHARED_LIBS=ON ..
+make
+sudo make install
+````
+
